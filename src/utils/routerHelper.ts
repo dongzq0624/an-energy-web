@@ -65,15 +65,7 @@ export const generateRoute = (routes: AppCustomRouteRecordRaw[]): AppRouteRecord
   const res: AppRouteRecordRaw[] = []
   const modulesRoutesKeys = Object.keys(modules)
 
-  // 需要隐藏的菜单名称列表
-  const hiddenMenuNames = ['作者动态', 'Boot 开发文档', 'Cloud 开发文档']
-
   for (const route of routes) {
-    // 如果是需要隐藏的菜单，则跳过
-    if (hiddenMenuNames.includes(route.name)) {
-      console.log(`隐藏菜单: ${route.name}`)
-      continue
-    }
     // 1. 生成 meta 菜单元数据
     const meta = {
       title: route.name,
@@ -127,10 +119,6 @@ export const generateRoute = (routes: AppCustomRouteRecordRaw[]): AppRouteRecord
       const index = route?.component
         ? modulesRoutesKeys.findIndex((ev) => ev.includes(route.component))
         : modulesRoutesKeys.findIndex((ev) => ev.includes(route.path))
-      if (index === -1) {
-        console.warn(`组件文件不存在，跳过路由: ${route?.component || route.path}`)
-        continue
-      }
       childrenData.component = modules[modulesRoutesKeys[index]]
       data.children = [childrenData]
     } else {
