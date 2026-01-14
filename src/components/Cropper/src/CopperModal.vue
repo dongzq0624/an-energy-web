@@ -23,12 +23,12 @@
           <div :class="`${prefixCls}-toolbar`">
             <el-upload :beforeUpload="handleBeforeUpload" :fileList="[]" accept="image/*">
               <el-tooltip :content="t('cropper.selectImage')" placement="bottom">
-                <XButton preIcon="ant-design:upload-outlined" type="primary" />
+                <ANButton preIcon="ant-design:upload-outlined" type="primary" />
               </el-tooltip>
             </el-upload>
             <el-space>
               <el-tooltip :content="t('cropper.btn_reset')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="ant-design:reload-outlined"
                   size="small"
@@ -37,7 +37,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_rotate_left')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="ant-design:rotate-left-outlined"
                   size="small"
@@ -46,7 +46,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_rotate_right')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="ant-design:rotate-right-outlined"
                   size="small"
@@ -55,7 +55,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_scale_x')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="vaadin:arrows-long-h"
                   size="small"
@@ -64,7 +64,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_scale_y')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="vaadin:arrows-long-v"
                   size="small"
@@ -73,7 +73,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_zoom_in')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="ant-design:zoom-in-outlined"
                   size="small"
@@ -82,7 +82,7 @@
                 />
               </el-tooltip>
               <el-tooltip :content="t('cropper.btn_zoom_out')" placement="bottom">
-                <XButton
+                <ANButton
                   :disabled="!src"
                   preIcon="ant-design:zoom-out-outlined"
                   size="small"

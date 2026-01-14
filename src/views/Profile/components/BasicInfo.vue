@@ -8,8 +8,8 @@
     </template>
   </Form>
   <div style="text-align: center">
-    <XButton :title="t('common.save')" type="primary" @click="submit()" />
-    <XButton :title="t('common.reset')" type="danger" @click="init()" />
+    <ANButton :title="t('common.save')" type="primary" @click="submit()" />
+    <ANButton :title="t('common.reset')" type="danger" @click="init()" />
   </div>
 </template>
 <script lang="ts" setup>

@@ -1,4 +1,4 @@
-import XButton from './src/XButton.vue'
-import XTextButton from './src/XTextButton.vue'
+import ANButton from './src/ANButton.vue'
+import ANTextButton from './src/ANTextButton.vue'
 
-export { XButton, XTextButton }
+export { ANButton, ANTextButton }

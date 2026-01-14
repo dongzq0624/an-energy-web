@@ -60,7 +60,7 @@
       </el-col>
       <el-col :span="24" class="px-10px">
         <el-form-item>
-          <XButton
+          <ANButton
             :loading="loginLoading"
             :title="t('login.login')"
             class="w-full"

@@ -11,11 +11,11 @@
       <template #default="{ row }">
         <template v-if="row.openid">
           已绑定
-          <XTextButton class="mr-5" title="(解绑)" type="primary" @click="unbind(row)" />
+          <ANTextButton class="mr-5" title="(解绑)" type="primary" @click="unbind(row)" />
         </template>
         <template v-else>
           未绑定
-          <XTextButton class="mr-5" title="(绑定)" type="primary" @click="bind(row)" />
+          <ANTextButton class="mr-5" title="(绑定)" type="primary" @click="bind(row)" />
         </template>
       </template>
     </el-table-column>
