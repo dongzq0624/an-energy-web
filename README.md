@@ -2,8 +2,6 @@
 
 ## 🚀 快速开始
 
-- **演示地址**：<http://dashboard-vue3.yudao.iocoder.cn>
-- **启动文档**：<https://doc.iocoder.cn/quick-start/>
 - **环境要求**：Node.js 16.18.0+ && pnpm 8.6.0+
 
 ### ✨ 核心特性
